@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>     
+        <title>ONLINE BILLING SYSTEM</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+           
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    </head>    
+    <body>
+        
+        <div class=" bg-dark text-white p-2">
+        
+        <p id="demo"></p>
+        <a role="button" href="loginpage/page.html" class="btn btn-outline-secondary botton">Log-Out</a>
+            <h1 class="display-4 text-center"><b>ONLINE BILLING SYSTEM</b></h1>
+        </div>      
+        <div class="container-fluid">
+            <div class="row content bg-danger">
+                <div class="col-sm-4 bg-success text-center text-white p-sm-0">
+                    <form class="was-validation pl-sm-2 bg-primary w3-container">                   
+                        <div class="form-row pr-2 w3-container">
+                            <label for="fruit-name" class="col-sm-4 text-left fruit-input">Item Name : </label>
+                            <input type="text" class='col-sm-7 mb-sm-2 form-control' id="fruit-name" name="fruit-name" placeholder="Item name" required>
+                        </div>                       
+                        <div class="form-row pr-2 w3-container">
+                            <label for="fruit-price" class="col-sm-4 text-left fruit-input">Price : </label>
+                            <input type="number" class="col-sm-7 mb-sm-2 form-control" id="fruit-price" name="fruit-price" required>
+                        </div>     
+                        <div class="form-row pr-2 form-group w3-container">
+                            <label for="fruit-quantity" class="col-sm-4 text-left fruit-input">Quantity : </label>
+                            <input type="number" class="col-sm-7 mb-sm-2 form-control" id="fruit-quantity" name="fruit-quantity" required>
+                        </div>                        
+                        <div class="container">
+                            <button type="submit" class="btn btn-success" id="add-btn">Add</button> <br><br>
+                            <button type="button" class="btn btn-danger mb-sm-2" id="fruit-basket">View Item Basket</button>
+                            <button type="button" class="btn btn-warning mb-sm-2" id="total-price">View Total Price</button>
+                       </div>     
+                     <div class="form-row pr-2 w3-container">                    
+                         <label for="fname" class="col-sm-4 text-left fruit-input" >Email Id / Number:</label>
+                         <input type="text" class='col-sm-7 mb-sm-2 form-control' id="myInputs"placeholder="Number / Mail-ID"name="myinputs">
+                    </div> 
+                    <div class="container">    
+                         <button onclick="myFunction()"  class="btn btn-dark mb-sm-2" id="mail">Email receipt&#128231;</button>
+                         <button type="button"  class="btn btn-warning mb-sm-2" id="sms">Whatsapp <i class="fa fa-whatsapp"></i></button>
+                         <button onclick="window.print()" class="btn btn-danger mb-sm-2">Print Bill</button>
+                         <input type="text" class="col-sm-7 mb-sm-2" id="bal" name="bal" placeholder="Enter the Given Amount">
+                         <button type="button"  class="btn btn-success" id="bala">OK</button>
+                    </div> 
+                   </form> 
+                    <div class="pr-2 container total bg-info hidden" id="total-div">          
+                    </div>
+                </div>       
+                <div class="col-sm-8 container-fluid hidden" id="list">                    
+                </div>
+            </div>   
+        </div>   
+        
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

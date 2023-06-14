@@ -1,0 +1,111 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.top{
+    margin-top: 56px;
+}
+.vijay{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.vijay img{
+    margin-bottom: 10px;
+}
+.vijay h1{
+    margin-bottom: 15px;
+}
+.vijay p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.parallex{
+    height: 400px;
+    text-align: center;
+    padding-top: 220px;
+}
+.parallex p{
+    color: beige;
+    font-size: 30px;
+}
+.img{
+    padding-top: 25px;
+}
+.content{
+    text-align: center;
+    padding: 20px;
+}
+.content h1{
+    margin-top: 90px;
+}
+footer{
+    height: 30px;
+    padding: 0px 60px;
+    background: lightsteelblue;
+    margin-bottom: 0px;
+}
+footer a{
+    color: whitesmoke;
+}
+.right{
+    float:right;
+}
+footer p{
+    margin-bottom: 0px;
+}
+footer .left{
+    padding-right: 20px;
+
+}
+@media (max-width:407px) {
+    footer{
+        height: 50px;
+    }
+}
+.rows{
+    margin-left: 400px;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  @media (max-width:544px) {
+    .parallex p{
+        font-size: 20px;
+    }
+}
